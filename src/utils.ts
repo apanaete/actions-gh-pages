@@ -13,6 +13,7 @@ export async function getHomeDir(): Promise<string> {
   }
 
   core.warning(`homeDir: ${homedir}`);
+  core.warning(`Current directory: ${process.cwd()}`);
 
   return homedir;
 }

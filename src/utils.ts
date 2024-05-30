@@ -12,7 +12,7 @@ export async function getHomeDir(): Promise<string> {
     homedir = `${process.env.HOME}`;
   }
 
-  core.debug(`homeDir: ${homedir}`);
+  core.warning(`homeDir: ${homedir}`);
 
   return homedir;
 }

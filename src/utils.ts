@@ -14,6 +14,7 @@ export async function getHomeDir(): Promise<string> {
 
   core.warning(`homeDir: ${homedir}`);
   core.warning(`Current directory: ${process.cwd()}`);
+  core.warning(`workspace: ${process.env['GITHUB_WORKSPACE']}`);
   core.warning(`env: ${JSON.stringify(process.env)}`);
 
   return homedir;
